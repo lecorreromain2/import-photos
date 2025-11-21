@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partage Photos Événement</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📸 Partagez vos souvenirs</h1>
+            <p>Laissez une trace de votre passage à l'événement !</p>
+        </header>
+
+        <div class="card">
+            <div class="input-group">
+                <label for="guestName">Votre Prénom & Nom</label>
+                <input type="text" id="guestName" placeholder="ex: Jean Dupont" required>
+            </div>
+
+            <div id="drop-zone" class="drop-zone">
+                <span class="drop-icon">☁️</span>
+                <p>Glissez vos photos ici ou cliquez pour sélectionner</p>
+                <input type="file" id="fileInput" accept="image/*,video/*" multiple hidden>
+            </div>
+
+            <div id="preview-area" class="preview-area"></div>
+
+            <button id="uploadBtn" class="btn-primary" disabled>Envoyer les photos</button>
+
+            <div id="progress-container" class="hidden">
+                <p id="status-text">Envoi en cours...</p>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar" class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
