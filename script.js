@@ -4,14 +4,13 @@
 // TODO: Remplace ceci par ta configuration disponible dans la console Firebase
 // (Project settings > General > Your apps > SDK setup and configuration)
 const firebaseConfig = {
-    apiKey: "TA_API_KEY",
-    authDomain: "TON_PROJET.firebaseapp.com",
-    projectId: "TON_PROJET",
-    storageBucket: "TON_PROJET.appspot.com",
-    messagingSenderId: "...",
-    appId: "..."
+  apiKey: "AIzaSyCkgAAR5h0AYmbIRfYEwRYliDGVJMIGweU",
+  authDomain: "import-media.firebaseapp.com",
+  projectId: "import-media",
+  storageBucket: "import-media.firebasestorage.app",
+  messagingSenderId: "860000717512",
+  appId: "1:860000717512:web:423afe04b767e0620d73fd"
 };
-
 // Initialisation
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
